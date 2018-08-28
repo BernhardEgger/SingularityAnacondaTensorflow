@@ -1,8 +1,8 @@
 # SingularityAnacondaTensorflow
 
-A simple Singularity container containing Anaconda3-5.2.0 (Python 3) and most recent tensorflow with GPU support 
+A simple Singularity container containing Anaconda3-5.2.0 (Python 3) and most recent tensorflow with GPU support on an Ubuntu 14.04 (trusty)
 
-Howto use:
+How to use:
 
 * download `singularity.recipe` from this repository
 * install singularity e.g. by: `sudo apt-get install singularity-container` under ubuntu
