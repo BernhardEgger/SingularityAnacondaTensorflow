@@ -1,6 +1,6 @@
 # SingularityAnacondaTensorflow
 
-A simple Singularity recipe to build an image containing Anaconda3-5.2.0 (Python 3) and most recent tensorflow with GPU support on an Ubuntu 14.04 (trusty).
+A simple Singularity recipe to build an image containing Anaconda3-5.2.0 (Python 3) and most recent tensorflow with GPU support on an Ubuntu 18.04.
 Uses the graphics card driver installed on the system (using Singularitys native GPU support by `--nv`)
 
 How to use:
