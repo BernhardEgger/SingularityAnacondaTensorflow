@@ -1,0 +1,24 @@
+BootStrap: debootstrap
+OSVersion: trusty
+MirrorURL: http://us.archive.ubuntu.com/ubuntu/
+
+	mkdir /local/
+	cd /local/
+
+	sed -i 's/$/ universe/' /etc/apt/sources.list
+	apt-get update 
+
+	apt-get -y --force-yes install vim wget bzip2
+
+	# install anaconda
+	# PREFIX=/root/anaconda3
+	wget https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+	bash ./Anaconda3-5.2.0-Linux-x86_64.sh -b
+	export PATH=$PATH:/root/anaconda3/bin
+
+	# setup tensorflow environment
+	# /root/anaconda3/envs/tensorflow-env
+	conda create --name tensorflow-env -y
+	chmod +x /root/anaconda3/bin/activate
+	/root/anaconda3/bin/activate tensorflow-env
+	conda install -c anaconda tensorflow-gpu  -y
