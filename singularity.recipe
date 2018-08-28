@@ -22,3 +22,6 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 	chmod +x /root/anaconda3/bin/activate
 	/root/anaconda3/bin/activate tensorflow-env
 	conda install -c anaconda tensorflow-gpu  -y
+
+%environment
+	export PATH=$PATH:/root/anaconda3/bin
